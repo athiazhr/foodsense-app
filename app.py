@@ -14,6 +14,21 @@ html, body, [class*="css"] {
     font-family: 'Inter', 'Segoe UI', sans-serif !important;
 }
 
+/* ===== FORCE DARK MODE ===== */
+html, body, [data-testid="stAppViewContainer"], 
+[data-testid="stMain"], .main {
+    background-color: #0a1121 !important;
+    color: #e2e8f0 !important;
+}
+
+[data-testid="stHeader"] {
+    background-color: #0a1121 !important;
+}
+
+[data-testid="stToolbar"] {
+    background-color: #0a1121 !important;
+}
+
 /* ===== SIDEBAR ===== */
 [data-testid="stSidebar"] {
     background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
