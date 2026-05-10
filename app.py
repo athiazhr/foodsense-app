@@ -17,16 +17,16 @@ html, body, [class*="css"] {
 /* ===== FORCE DARK MODE ===== */
 html, body, [data-testid="stAppViewContainer"], 
 [data-testid="stMain"], .main {
-    background-color: #0f172a !important;
+    background-color: #000000 !important;
     color: #e2e8f0 !important;
 }
 
 [data-testid="stHeader"] {
-    background-color: #0f172a !important;
+    background-color: #000000 !important;
 }
 
 [data-testid="stToolbar"] {
-    background-color: #0f172a !important;
+    background-color: #000000 !important;
 }
 
 /* ===== SIDEBAR ===== */
