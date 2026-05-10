@@ -14,6 +14,31 @@ html, body, [class*="css"] {
     font-family: 'Inter', 'Segoe UI', sans-serif !important;
 }
 
+/* ===== FILE UPLOADER ===== */
+[data-testid="stFileUploadDropzone"] {
+    background-color: #1e293b !important;
+    border-color: rgba(255,255,255,0.1) !important;
+}
+[data-testid="stFileUploadDropzone"] * {
+    color: #e2e8f0 !important;
+}
+
+/* ===== TEXT INPUT ===== */
+.stTextInput input,
+.stTextInput textarea,
+[data-baseweb="input"] input,
+[data-baseweb="textarea"] textarea {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    border-color: rgba(255,255,255,0.1) !important;
+    caret-color: #e2e8f0 !important;
+}
+
+/* Placeholder */
+.stTextInput input::placeholder {
+    color: #64748b !important;
+}
+
 /* ===== FORCE DARK MODE ===== */
 html, body, [data-testid="stAppViewContainer"], 
 [data-testid="stMain"], .main {
