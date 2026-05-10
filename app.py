@@ -64,6 +64,29 @@ html, body, [data-testid="stAppViewContainer"],
     color: #e2e8f0 !important;
 }
 
+/* ===== DATAFRAME / TABEL ===== */
+[data-testid="stDataFrame"] {
+    background-color: #1e293b !important;
+}
+[data-testid="stDataFrame"] table,
+[data-testid="stDataFrame"] th,
+[data-testid="stDataFrame"] td {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+}
+
+/* ===== METRIC VALUE & LABEL ===== */
+[data-testid="stMetricValue"] {
+    color: #ffffff !important;
+    font-size: 2rem !important;
+}
+[data-testid="stMetricLabel"] {
+    color: #e2e8f0 !important;
+}
+[data-testid="stMetricDelta"] {
+    color: #94a3b8 !important;
+}
+
 /* ===== SIDEBAR ===== */
 [data-testid="stSidebar"] {
     background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
