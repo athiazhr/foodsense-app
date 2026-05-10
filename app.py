@@ -29,6 +29,41 @@ html, body, [data-testid="stAppViewContainer"],
     background-color: #0a1121 !important;
 }
 
+/* ===== FORCE ALL ELEMENTS DARK ===== */
+[data-testid="stFileUploader"],
+[data-testid="stFileUploadDropzone"],
+.stTextInput input,
+[data-testid="stSelectbox"] > div > div,
+.stButton button,
+[data-testid="stExpander"],
+[data-testid="metric-container"] {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    border-color: rgba(255,255,255,0.1) !important;
+}
+
+/* Button khusus */
+.stButton button {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    border: 1px solid rgba(255,255,255,0.1) !important;
+}
+
+.stButton button:hover {
+    background-color: #334155 !important;
+}
+
+/* Progress bar track */
+[data-testid="stProgressBar"] {
+    background-color: #1e293b !important;
+}
+
+/* Metric value & label */
+[data-testid="metric-container"] label,
+[data-testid="metric-container"] [data-testid="stMetricValue"] {
+    color: #e2e8f0 !important;
+}
+
 /* ===== SIDEBAR ===== */
 [data-testid="stSidebar"] {
     background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
