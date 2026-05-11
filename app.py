@@ -304,6 +304,12 @@ if "df" not in st.session_state:
 if "kota_pilih" not in st.session_state:
     st.session_state.kota_pilih = None
 
+if st.session_state.df is None:
+    try:
+        st.session_state.df = pd.read_csv("data_clean_restaurant.csv")
+    except:
+        pass
+
 # ================= LOGO MAP =================
 LOGO_MAP = {
     "Unagi Kurofune Indonesia": "logos/unagi.jpg",
