@@ -888,15 +888,6 @@ if menu == "Home":
         brands_summary["sentimen_pct"] = (brands_summary["positif"] / brands_summary["total_reviews"] * 100).round(0).astype(int)
         top5 = brands_summary.sort_values("avg_rating", ascending=False).head(5).reset_index(drop=True)
 
-        # Stats overview
-        c1, c2, c3 = st.columns(3)
-        with c1:
-            st.metric("Total Restoran", df["brand_name"].nunique())
-        with c2:
-            st.metric("Total Review", f"{len(df):,}")
-        with c3:
-            st.metric("Rata-rata Rating", f"⭐ {df['rating'].mean():.2f}")
-
         st.markdown("---")
         st.markdown("### 📖 Cara Menggunakan FoodSense")
         
@@ -931,6 +922,15 @@ if menu == "Home":
         
             </div>
             """, unsafe_allow_html=True)
+
+        # Stats overview
+        c1, c2, c3 = st.columns(3)
+        with c1:
+            st.metric("Total Restoran", df["brand_name"].nunique())
+        with c2:
+            st.metric("Total Review", f"{len(df):,}")
+        with c3:
+            st.metric("Rata-rata Rating", f"⭐ {df['rating'].mean():.2f}")
 
         st.markdown("---")
         st.markdown("### 🏆 Leaderboard")
