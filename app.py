@@ -900,7 +900,7 @@ if menu == "Home":
         st.markdown("---")
         st.markdown("### 📖 Cara Menggunakan FoodSense")
         
-        with st.expander("🔍 Klik di sini untuk melihat panduan penggunaan"):
+        with st.expander("Klik di sini untuk melihat panduan penggunaan"):
             st.markdown("""
             <div style='padding:8px 0;'>
         
