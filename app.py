@@ -923,6 +923,8 @@ if menu == "Home":
             </div>
             """, unsafe_allow_html=True)
 
+        st.markdown("---")
+
         # Stats overview
         c1, c2, c3 = st.columns(3)
         with c1:
