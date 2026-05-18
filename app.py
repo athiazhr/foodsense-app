@@ -898,6 +898,41 @@ if menu == "Home":
             st.metric("Rata-rata Rating", f"⭐ {df['rating'].mean():.2f}")
 
         st.markdown("---")
+        st.markdown("### 📖 Cara Menggunakan FoodSense")
+        
+        with st.expander("🔍 Klik di sini untuk melihat panduan penggunaan"):
+            st.markdown("""
+            <div style='padding:8px 0;'>
+        
+            <div style='margin-bottom:20px;'>
+                <p style='color:#818cf8;font-weight:700;font-size:15px;margin:0 0 6px;'>🔍 Search — Cari Restoran</p>
+                <p style='color:#e2e8f0;font-size:13px;margin:0;'>Ketik nama restoran <b>(contoh: "Mie Gacoan")</b> atau kategori makanan <b>(contoh: "japanese", "burger", "pedas", "murah")</b> di kolom pencarian. Hasil akan muncul otomatis beserta analisis sentimen singkat. Klik <b>"Lihat Detail Lengkap →"</b> untuk melihat analisis penuh.</p>
+            </div>
+        
+            <div style='margin-bottom:20px;'>
+                <p style='color:#818cf8;font-weight:700;font-size:15px;margin:0 0 6px;'>🏪 Categories — Analisis Per Restoran</p>
+                <p style='color:#e2e8f0;font-size:13px;margin:0;'>Lihat daftar semua restoran yang tersedia. Klik salah satu restoran untuk melihat analisis lengkap berupa: distribusi rating, trend review per bulan, speedometer kategorisasi <b>Berkualitas Baik vs FOMO-driven</b>, word cloud review, dan rekomendasi restoran serupa.</p>
+            </div>
+        
+            <div style='margin-bottom:20px;'>
+                <p style='color:#818cf8;font-weight:700;font-size:15px;margin:0 0 6px;'>📍 City — Filter Berdasarkan Wilayah</p>
+                <p style='color:#e2e8f0;font-size:13px;margin:0;'>Pilih wilayah Jakarta <b>(Selatan, Pusat, Barat, Utara, Timur)</b> untuk melihat restoran yang ada di area tersebut beserta ranking dan jumlah cabangnya.</p>
+            </div>
+        
+            <div style='margin-bottom:20px;'>
+                <p style='color:#818cf8;font-weight:700;font-size:15px;margin:0 0 6px;'>🎯 Membaca Speedometer</p>
+                <p style='color:#e2e8f0;font-size:13px;margin:0;'>Skor restoran dihitung dari 3 faktor: <b>Rating (30%)</b>, <b>Sentimen review (30%)</b>, dan <b>Volume ulasan per cabang (40%)</b>. Skor ≥ 0.90 = <span style='color:#86efac;font-weight:600;'>Berkualitas Baik ✅</span>, skor &lt; 0.90 = <span style='color:#fca5a5;font-weight:600;'>FOMO-driven ⚠️</span> (mungkin viral tapi konsistensinya perlu dicek).</p>
+            </div>
+        
+            <div>
+                <p style='color:#818cf8;font-weight:700;font-size:15px;margin:0 0 6px;'>☁️ Word Cloud</p>
+                <p style='color:#e2e8f0;font-size:13px;margin:0;'>Kata yang paling sering muncul di review pelanggan. Semakin besar kata, semakin sering disebut orang — cocok untuk cek apa yang paling disorot dari restoran tersebut.</p>
+            </div>
+        
+            </div>
+            """, unsafe_allow_html=True)
+
+        st.markdown("---")
         st.markdown("### 🏆 Leaderboard")
         st.markdown("<p style='color:#64748b;font-size:13px;margin-top:-10px;margin-bottom:20px;'>Trending berdasarkan rating tertinggi</p>", unsafe_allow_html=True)
 
