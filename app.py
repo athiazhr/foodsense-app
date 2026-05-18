@@ -867,7 +867,7 @@ if menu == "Home":
     <div class="hero-banner">
         <h1 style='margin:0;font-size:2.2rem;color:#f1f5f9;'>Analisis Sentimen Restoran 🍽️</h1>
         <p style='margin:10px 0 0;color:#94a3b8;font-size:15px;max-width:600px;'>
-            Temukan restoran terbaik di Jakarta berdasarkan analisis sentimen review Google Maps secara mendalam.
+            Tidak semua restoran yang viral itu benar-benar enak. FoodSense menganalisis ribuan review Google Maps untuk membedakan restoran yang <b style='color:#86efac;'>Berkualitas Baik</b> dari yang sekadar <b style='color:#fca5a5;'>FOMO-driven</b> — bantu kamu pilih tempat makan yang worth it!
         </p>
         <div style='margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;'>
             <span class='tag-pill'>📊 Analisis Sentimen</span>
