@@ -689,7 +689,7 @@ def show_detail_restoran(brand_name, df):
     final_score = (cabang_agg["final_score"] * cabang_agg["n_reviews"]).sum() / cabang_agg["n_reviews"].sum()
     rating_score = brand_df_calc["rating_score_col"].mean()
     avg_sentiment_val = brand_df_calc["sentiment_score"].mean()
-    volume_score = min(total_reviews / MAX_REVIEWS, 1.0)
+    volume_score = (cabang_agg["volume_score"] * cabang_agg["n_reviews"]).sum() / cabang_agg["n_reviews"].sum()
 
     import streamlit.components.v1 as components
     components.html(render_speedometer(final_score, rating_score, avg_sentiment_val, volume_score, THRESHOLD), height=360)
