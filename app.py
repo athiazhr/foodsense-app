@@ -700,7 +700,7 @@ def show_detail_restoran(brand_name, df):
 |--------|-------|-------|
 | Sentimen (dari data NLP) | 30% | `{avg_sentiment_val:.3f}` |
 | Rating (avg ÷ 5) | 30% | `{rating_score:.3f}` |
-| Volume review (per cabang ÷ 100) | 40% | `{volume_score:.3f}` |
+| Volume review (seluruh cabang ÷ 100) | 40% | `{volume_score:.3f}` |
 | **Skor Akhir** | | **`{final_score:.3f}`** |
 
 **Berkualitas Baik** ≥ 0.90 → Restoran konsisten dan terpercaya ✅  
